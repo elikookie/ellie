@@ -23,7 +23,7 @@ export default function Home() {
         className="navbar 
       hidden
       lg:space-x-20 lg:p-5 lg:flex lg:justify-center lg:sticky lg:top-0 
-      bg-slate-50 rounded-b-xl"
+      bg-slate-50 rounded-b-xl lg:block"
       >
         <button
           className="lg:px-10 lg:p-2 lg:border-2 lg:border-solid lg:border-black lg:rounded-full "
@@ -60,7 +60,7 @@ export default function Home() {
       {/* Intro */}
       <div ref={intro} className="flex flex-col justify-center min-h-screen">
         <div className="lg:flex lg:justify-center">
-          <div className="hidden lg:visible">
+          <div className="hidden lg:block">
             <Image
               src="/five.png"
               width={250}
@@ -77,7 +77,7 @@ export default function Home() {
               The new addition to your team ;D
             </h3>
           </div>
-          <div className="hidden lg:visible">
+          <div className="hidden lg:block">
             <Image
               src="/revfive.png"
               width={250}
@@ -108,28 +108,18 @@ export default function Home() {
 
       {/* Zendesk */}
       <div ref={zendesk} className="flex flex-col justify-center min-h-screen">
-        <h1
-          className="inria-serif-regular text-5xl p-5
-        lg:hidden"
-        >
+        <h1 className="inria-serif-regular text-6xl p-5 lg:hidden">
           Why I got into Tech
         </h1>
-
-        <div
-          className="p-4
-        lg:grid lg:grid-cols-2 lg:gap-20 lg:pt-20 lg:pl-20"
-        >
+        <div className="p-4 lg:grid lg:grid-cols-2 lg:gap-20 lg:pt-20 lg:pl-20">
           <div>
-            <h1
-              className="inria-serif-regular text-7xl hidden 
-            lg:visible"
-            >
+            <h1 className="inria-serif-regular text-7xl hidden lg:block">
               Why I got into Tech
             </h1>
-            <div className="hidden lg:visible">
-              <br></br>
+            <div className="hidden lg:block">
+              <br></br> <br></br>
             </div>
-            <div className="lg:hidden">
+            <div className="lg:hidden p-5">
               <Image
                 src="/zendeskLogo.png"
                 width={400}
@@ -144,10 +134,12 @@ export default function Home() {
                 alt="A picture at my desk at Zendesk"
               />
             </div>
+
             <div className="lg:hidden">
               <br></br>
             </div>
-            <p className="inria-serif-regular">
+
+            <p className="inria-serif-regular p-5">
               In 2019 I signed up for Teen-Turn which is an organization that
               aims to inspire young women into STEM fields. I got my first
               experience coding basic websites and making apps using tools like
@@ -168,7 +160,8 @@ export default function Home() {
               study Computer Science in college.
             </p>
           </div>
-          <div className="hidden lg:pl-10 lg:visible">
+
+          <div className="hidden lg:pl-10 lg:ml-20 lg:block">
             <Image
               src="/zendeskLogo.png"
               width={400}
@@ -245,9 +238,10 @@ export default function Home() {
 
       {/* Projects */}
       <div ref={projects} className="flex flex-col min-h-screen p-20">
-        <h1 className="inria-serif-regular text-6xl">
+        <h1 className="inria-serif-regular text-6xl lg:block hidden">
           TinyTips - Donation platform to support creators
         </h1>
+        <h1 className="inria-serif-regular text-6xl">TinyTips</h1>
         <br></br> <br></br>
         <div className="flex justify-center">
           <Image
@@ -257,6 +251,8 @@ export default function Home() {
             alt="TUD Grangegorman Campus"
           />
         </div>
+        <br></br>
+        <p>Donation platform to support creators </p>
       </div>
 
       {/* Contact */}
@@ -280,7 +276,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div class="mt-8 text-center absolute bottom-0 hidden lg:visible">
+        <div class="mt-8 text-center absolute bottom-0 hidden lg:block">
           <p class="text-gray-600 text-sm inria-serif-regular">
             &copy; 2024 Elitsa Koleva. All rights reserved.
           </p>
