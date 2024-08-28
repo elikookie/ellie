@@ -91,7 +91,10 @@ export default function Home() {
         <br></br>
         <br></br>
         <div className="flex flex-col items-center">
-          <div className="absolute bottom-10 lg:bottom-0">
+          <div
+            className="absolute bottom-10 lg:bottom-0"
+            onClick={() => scrollToPart(zendesk)}
+          >
             <Image
               src="/down-arrow.png"
               width={100}
@@ -251,8 +254,21 @@ export default function Home() {
             alt="TUD Grangegorman Campus"
           />
         </div>
-        <br></br>
         <p>Donation platform to support creators </p>
+        <br></br>
+        <div className="pt-10">
+          <h1 className="inria-serif-regular text-6xl lg:block ">UCVME </h1>
+          <div className="flex justify-center">
+            <Image
+              src="/tinytipsScreenshot.png"
+              width={700}
+              height={400}
+              alt="TUD Grangegorman Campus"
+            />
+          </div>
+          <br></br>
+          <p>Donation platform to support creators </p>
+        </div>
       </div>
 
       {/* Contact */}
