@@ -18,6 +18,7 @@ export default function Home() {
 
   return (
     <main className="bg-slate-50">
+      
       {/* Navbar */}
       <div className="navbar space-x-20 p-5 flex justify-center sticky top-0 bg-slate-50 rounded-b-xl">
         <button
@@ -93,13 +94,14 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Zendesk */}
       <br></br>
       <br></br>
       <hr></hr>
+
+      {/* Zendesk */}
       <div ref={zendesk} className="flex flex-col justify-center min-h-screen">
         <div className="grid grid-cols-2 gap-20 pt-20 pl-20">
-          <div className="flex flex-col justify-evenly">
+          <div>
             <h1 className="inria-serif-regular text-7xl">
               Why I got into Tech
             </h1>
@@ -143,14 +145,18 @@ export default function Home() {
         </div>
       </div>
 
+      <hr></hr>
+
       {/* TUD */}
-      <div ref={TUD} className="flex flex-col justify-center min-h-screen">
-        <h1 className="inria-serif-regular text-7xl pt-20 text-center">
+      <div
+        ref={TUD}
+        className="flex flex-col justify-center items-center min-h-screen px-10"
+      >
+        <h1 className="inria-serif-regular text-7xl pt-10 text-center">
           BSc in Computer Science at TUD{" "}
         </h1>
-        <br></br>
-        <div className="grid grid-cols-2 gap-4">
-          <div className="ml-20 pl-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+          <div className="flex justify-center">
             <Image
               src="/tud.png"
               width={350}
@@ -158,17 +164,16 @@ export default function Home() {
               alt="TUD Grangegorman Campus"
             />
           </div>
-          <div>
-            <p className="inria-serif-regular">
+          <div className="flex flex-col justify-center">
+            <p className="inria-serif-regular mb-4">
               In my 4 years of study I have learned{" "}
               <u>a wide range of skills</u> and have worked on numerous team and
               individual projects.
             </p>
-            <br></br>
-            <p className="inria-serif-regular">
+            <p className="inria-serif-regular mb-4">
               Some of the <u>topics</u> I have learned include:
             </p>
-            <ul className="inria-serif-regular list-disc">
+            <ul className="inria-serif-regular list-disc ml-5 mb-4">
               <li>Operating Systems</li>
               <li>Network Programming and Client Server Programming</li>
               <li>Software Engineering</li>
@@ -179,28 +184,67 @@ export default function Home() {
               <li>Mathematics</li>
               <li>Physical Computing</li>
               <li>Games Engines and Simulation</li>
-              <li>Artificial Intelegence for Data Analytics</li>
+              <li>Artificial Intelligence for Data Analytics</li>
               <li>Distributed Systems</li>
             </ul>
-            <br></br>
-            <p className="inria-serif-regular">
+            <p className="inria-serif-regular mb-2">
               <u>And some of the tools I have used include:</u>
             </p>
-            <ul className="inria-serif-regular">
-              <li>C,Python,Java,Kotlin,Arduino code, HTML/CSS/JS</li>
+            <ul className="inria-serif-regular ml-5">
+              <li>C, Python, Java, Kotlin, Arduino code, HTML/CSS/JS</li>
               <li>Vue.js, Svelte, Next.js, Node.js, Flask, Jetpack Compose</li>
               <li>MySQL, PostgresSQL, MongoDB, Firebase</li>
-              <li>Github</li>
+              <li>GitHub</li>
             </ul>
           </div>
         </div>
       </div>
 
+      <hr></hr>
+
       {/* Projects */}
-      <div ref={projects} className="flex flex-col min-h-screen"></div>
+      <div ref={projects} className="flex flex-col min-h-screen p-20">
+        <h1 className="inria-serif-regular text-6xl">
+          TinyTips - Donation platform to support creators
+        </h1>
+        <br></br> <br></br>
+        <div className="flex justify-center">
+          <Image
+            src="/tinytipsScreenshot.png"
+            width={700}
+            height={400}
+            alt="TUD Grangegorman Campus"
+          />
+        </div>
+      </div>
 
       {/* Contact */}
-      <div ref={contact} className="flex flex-col min-h-screen"></div>
+      <div ref={contact} className="flex flex-col min-h-screen p-20 mt-10">
+        <h1 class="text-6xl inria-serif-regular">Contact Me :D</h1>
+        <div className="pt-10">
+          <div class="mb-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-2 inria-serif-regular">
+              <u>Email</u>
+            </h2>
+            <p class="text-gray-700 inria-serif-regular">
+              elikoleva.daytime638@passinbox.com
+            </p>
+          </div>
+
+          <div class="mb-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-2 inria-serif-regular">
+            <u>Location</u>
+            </h2>
+            <p class="text-gray-700 inria-serif-regular">Dublin, Ireland</p>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center absolute bottom-0 ">
+          <p class="text-gray-600 text-sm inria-serif-regular">
+            &copy; 2024 Elitsa Koleva. All rights reserved.
+          </p>
+        </div>
+      </div>
     </main>
   );
 }
