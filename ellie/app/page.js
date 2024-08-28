@@ -97,14 +97,14 @@ export default function Home() {
       <br></br>
       <br></br>
       <hr></hr>
-      <div ref={zendesk} className="flex flex-col min-h-screen">
+      <div ref={zendesk} className="flex flex-col justify-center min-h-screen">
         <div className="grid grid-cols-2 gap-20 pt-20 pl-20">
           <div className="flex flex-col justify-evenly">
             <h1 className="inria-serif-regular text-7xl">
               Why I got into Tech
             </h1>
             <br></br>
-            <p>
+            <p className="inria-serif-regular">
               In 2019 I signed up for Teen-Turn which is an organization that
               aims to inspire young women into STEM fields. I got my first
               experience coding basic websites and making apps using tools like
@@ -144,7 +144,57 @@ export default function Home() {
       </div>
 
       {/* TUD */}
-      <div ref={TUD} className="flex flex-col min-h-screen"></div>
+      <div ref={TUD} className="flex flex-col justify-center min-h-screen">
+        <h1 className="inria-serif-regular text-7xl pt-20 text-center">
+          BSc in Computer Science at TUD{" "}
+        </h1>
+        <br></br>
+        <div className="grid grid-cols-2 gap-4">
+          <div className="ml-20 pl-10">
+            <Image
+              src="/tud.png"
+              width={350}
+              height={200}
+              alt="TUD Grangegorman Campus"
+            />
+          </div>
+          <div>
+            <p className="inria-serif-regular">
+              In my 4 years of study I have learned{" "}
+              <u>a wide range of skills</u> and have worked on numerous team and
+              individual projects.
+            </p>
+            <br></br>
+            <p className="inria-serif-regular">
+              Some of the <u>topics</u> I have learned include:
+            </p>
+            <ul className="inria-serif-regular list-disc">
+              <li>Operating Systems</li>
+              <li>Network Programming and Client Server Programming</li>
+              <li>Software Engineering</li>
+              <li>Web Development and Deployment</li>
+              <li>Databases (Relational and Non-Relational)</li>
+              <li>Mobile Software Development</li>
+              <li>Object Oriented Programming</li>
+              <li>Mathematics</li>
+              <li>Physical Computing</li>
+              <li>Games Engines and Simulation</li>
+              <li>Artificial Intelegence for Data Analytics</li>
+              <li>Distributed Systems</li>
+            </ul>
+            <br></br>
+            <p className="inria-serif-regular">
+              <u>And some of the tools I have used include:</u>
+            </p>
+            <ul className="inria-serif-regular">
+              <li>C,Python,Java,Kotlin,Arduino code, HTML/CSS/JS</li>
+              <li>Vue.js, Svelte, Next.js, Node.js, Flask, Jetpack Compose</li>
+              <li>MySQL, PostgresSQL, MongoDB, Firebase</li>
+              <li>Github</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
       {/* Projects */}
       <div ref={projects} className="flex flex-col min-h-screen"></div>
