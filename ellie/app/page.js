@@ -18,35 +18,39 @@ export default function Home() {
 
   return (
     <main className="bg-slate-50">
-      
       {/* Navbar */}
-      <div className="navbar space-x-20 p-5 flex justify-center sticky top-0 bg-slate-50 rounded-b-xl">
+      <div
+        className="navbar 
+      hidden
+      lg:space-x-20 lg:p-5 lg:flex lg:justify-center lg:sticky lg:top-0 
+      bg-slate-50 rounded-b-xl"
+      >
         <button
-          className="px-10 p-2 border-2 border-solid border-black rounded-full"
+          className="lg:px-10 lg:p-2 lg:border-2 lg:border-solid lg:border-black lg:rounded-full "
           onClick={() => scrollToPart(intro)}
         >
           Start
         </button>
         <button
-          className="px-10 p-2 border-2 border-solid border-black rounded-full"
+          className="lg:px-10 lg:p-2 lg:border-2 lg:border-solid lg:border-black lg:rounded-full "
           onClick={() => scrollToPart(zendesk)}
         >
           @Zendesk
         </button>
         <button
-          className="px-10 p-2 border-2 border-solid border-black rounded-full"
+          className="lg:px-10 lg:p-2 lg:border-2 lg:border-solid lg:border-black lg:rounded-full "
           onClick={() => scrollToPart(TUD)}
         >
           @TUD
         </button>
         <button
-          className="px-10 p-2 border-2 border-solid border-black rounded-full"
+          className="lg:px-10 lg:p-2 lg:border-2 lg:border-solid lg:border-black lg:rounded-full "
           onClick={() => scrollToPart(projects)}
         >
           Projects
         </button>
         <button
-          className="px-10 p-2 border-2 border-solid border-black rounded-full"
+          className="lg:px-10 lg:p-2 lg:border-2 lg:border-solid lg:border-black lg:rounded-full "
           onClick={() => scrollToPart(contact)}
         >
           Contact me :)
@@ -55,13 +59,15 @@ export default function Home() {
 
       {/* Intro */}
       <div ref={intro} className="flex flex-col justify-center min-h-screen">
-        <div className="flex justify-center">
-          <Image
-            src="/five.png"
-            width={250}
-            height={250}
-            alt="Picture of a hand"
-          />
+        <div className="lg:flex lg:justify-center">
+          <div className="hidden lg:visible">
+            <Image
+              src="/five.png"
+              width={250}
+              height={250}
+              alt="Picture of a hand"
+            />
+          </div>
           <div className="flex flex-col justify-center p-10">
             <h1 className="text-center inria-serif-regular text-7xl">
               Hello, I am Ellie
@@ -71,19 +77,21 @@ export default function Home() {
               The new addition to your team ;D
             </h3>
           </div>
-          <Image
-            src="/revfive.png"
-            width={250}
-            height={250}
-            alt="Picture of a hand"
-          />
+          <div className="hidden lg:visible">
+            <Image
+              src="/revfive.png"
+              width={250}
+              height={250}
+              alt="Picture of a hand"
+            />
+          </div>
         </div>
         <br></br>
         <br></br>
         <br></br>
         <br></br>
         <div className="flex flex-col items-center">
-          <div className="absolute bottom-0">
+          <div className="absolute bottom-10 lg:bottom-0">
             <Image
               src="/down-arrow.png"
               width={100}
@@ -100,12 +108,45 @@ export default function Home() {
 
       {/* Zendesk */}
       <div ref={zendesk} className="flex flex-col justify-center min-h-screen">
-        <div className="grid grid-cols-2 gap-20 pt-20 pl-20">
+        <h1
+          className="inria-serif-regular text-5xl p-5
+        lg:hidden"
+        >
+          Why I got into Tech
+        </h1>
+
+        <div
+          className="p-4
+        lg:grid lg:grid-cols-2 lg:gap-20 lg:pt-20 lg:pl-20"
+        >
           <div>
-            <h1 className="inria-serif-regular text-7xl">
+            <h1
+              className="inria-serif-regular text-7xl hidden 
+            lg:visible"
+            >
               Why I got into Tech
             </h1>
-            <br></br>
+            <div className="hidden lg:visible">
+              <br></br>
+            </div>
+            <div className="lg:hidden">
+              <Image
+                src="/zendeskLogo.png"
+                width={400}
+                height={100}
+                alt="Zendesk Logo"
+              />
+              <br></br>
+              <Image
+                src="/ZendeskInternship.jpg"
+                width={400}
+                height={100}
+                alt="A picture at my desk at Zendesk"
+              />
+            </div>
+            <div className="lg:hidden">
+              <br></br>
+            </div>
             <p className="inria-serif-regular">
               In 2019 I signed up for Teen-Turn which is an organization that
               aims to inspire young women into STEM fields. I got my first
@@ -127,7 +168,7 @@ export default function Home() {
               study Computer Science in college.
             </p>
           </div>
-          <div className="pl-10">
+          <div className="hidden lg:pl-10 lg:visible">
             <Image
               src="/zendeskLogo.png"
               width={400}
@@ -233,13 +274,13 @@ export default function Home() {
 
           <div class="mb-6">
             <h2 class="text-xl font-semibold text-gray-800 mb-2 inria-serif-regular">
-            <u>Location</u>
+              <u>Location</u>
             </h2>
             <p class="text-gray-700 inria-serif-regular">Dublin, Ireland</p>
           </div>
         </div>
 
-        <div class="mt-8 text-center absolute bottom-0 ">
+        <div class="mt-8 text-center absolute bottom-0 hidden lg:visible">
           <p class="text-gray-600 text-sm inria-serif-regular">
             &copy; 2024 Elitsa Koleva. All rights reserved.
           </p>
