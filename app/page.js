@@ -239,27 +239,48 @@ export default function Home() {
           TinyTips - Donation platform to support creators
         </h1>
         <h1 className="inria-serif-regular text-6xl lg:hidden">TinyTips</h1>
+        <h3 className="inria-serif-regular pt-2 pb-2">
+          (Still under development) Next.js, ,Node.js,Firebase, Stripe
+        </h3>
+        <a
+          className="inria-serif-regular underline"
+          href="https://github.com/elikookie/tinycoins"
+        >
+          Github Page
+        </a>
         <br></br> <br></br>
-        <div className="flex justify-center">
+        <div className="flex flex-col lg:flex-row justify-center">
           <img
             src="tinytipsScreenshot.png"
             width={700}
             height={400}
             alt="Tiny Tips Screenshot"
           />
+          <br></br>
+          <img
+            className="p-2"
+            src="tc1.png"
+            width={700}
+            height={400}
+            alt="Tiny Coins Creator Page"
+          />
         </div>
         <p className="inria-serif-regular">
-          Donation platform to support creators{" "}
+          A simple donation platform to allow fans to support their favourite
+          creators! <br></br>This is a personal project of mine that I have recently
+          started and should finish before the end of September.
         </p>
         <br></br>
         <div className="pt-10">
           <h1 className="inria-serif-regular text-6xl lg:block ">UCVME </h1>
+          <h3 className="inria-serif-regular pt-2 pb-2">
+            Vue.js, ,Node.js, PrimeVue, SCRUM, Figma
+          </h3>
           <a
             className="inria-serif-regular underline"
             href="https://github.com/SENZAGlobalClassroom/UCVME"
           >
-            {" "}
-            Github Page{" "}
+            Github Page
           </a>
           <div className="flex flex-col lg:flex-row justify-center">
             <img
