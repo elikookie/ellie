@@ -123,14 +123,14 @@ export default function Home() {
             </div>
             <div className="lg:hidden p-5">
               <img
-                src="zendeskLogo.png"
+                src="ellie/zendeskLogo.png"
                 width={400}
                 height={100}
                 alt="Zendesk Logo"
               />
               <br></br>
               <img
-                src="ZendeskInternship.png"
+                src="ellie/ZendeskInternship.jpg"
                 width={400}
                 height={100}
                 alt="A picture at my desk at Zendesk"
@@ -164,10 +164,10 @@ export default function Home() {
           </div>
 
           <div className="hidden lg:pl-10 lg:ml-20 lg:block">
-            <img src="zendeskLogo.png" height={100} alt="Zendesk Logo" />
+            <img src="ellie/zendeskLogo.png" height={100} alt="Zendesk Logo" />
             <br></br>
             <img
-              src="ZendeskInternship.jpg"
+              src="ellie/ZendeskInternship.jpg"
               width={400}
               height={100}
               alt="A picture at my desk at Zendesk"
@@ -189,7 +189,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
           <div className="flex justify-center">
             <img
-              src="tud.png"
+              src="ellie/tud.png"
               width={350}
               height={200}
               alt="TUD Grangegorman Campus"
@@ -242,7 +242,7 @@ export default function Home() {
         <br></br> <br></br>
         <div className="flex justify-center">
           <img
-            src="tinytipsScreenshot.png"
+            src="ellie/tinytipsScreenshot.png"
             width={700}
             height={400}
             alt="Tiny Tips Screenshot"
@@ -264,7 +264,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row justify-center">
             <img
               className="p-2"
-              src="ucvmeLogin.png"
+              src="ellie/ucvmeLogin.png"
               width={700}
               height={400}
               alt="UCVME Login"
@@ -272,7 +272,7 @@ export default function Home() {
             <br></br>
             <img
               className="p-2"
-              src="UCVME1.png"
+              src="ellie/UCVME1.png"
               width={700}
               height={400}
               alt="UCVME Home"
