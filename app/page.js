@@ -123,14 +123,14 @@ export default function Home() {
             </div>
             <div className="lg:hidden p-5">
               <img
-                src="ellie/zendeskLogo.png"
+                src="zendeskLogo.png"
                 width={400}
                 height={100}
                 alt="Zendesk Logo"
               />
               <br></br>
               <img
-                src="ellie/ZendeskInternship.jpg"
+                src="ZendeskInternship.jpg"
                 width={400}
                 height={100}
                 alt="A picture at my desk at Zendesk"
@@ -164,10 +164,10 @@ export default function Home() {
           </div>
 
           <div className="hidden lg:pl-10 lg:ml-20 lg:block">
-            <img src="ellie/zendeskLogo.png" height={100} alt="Zendesk Logo" />
+            <img src="zendeskLogo.png" height={100} alt="Zendesk Logo" />
             <br></br>
             <img
-              src="ellie/ZendeskInternship.jpg"
+              src="ZendeskInternship.jpg"
               width={400}
               height={100}
               alt="A picture at my desk at Zendesk"
@@ -189,7 +189,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
           <div className="flex justify-center">
             <img
-              src="ellie/tud.png"
+              src="tud.png"
               width={350}
               height={200}
               alt="TUD Grangegorman Campus"
@@ -238,11 +238,11 @@ export default function Home() {
         <h1 className="inria-serif-regular text-6xl lg:block hidden">
           TinyTips - Donation platform to support creators
         </h1>
-        <h1 className="inria-serif-regular text-6xl">TinyTips</h1>
+        <h1 className="inria-serif-regular text-6xl lg:hidden">TinyTips</h1>
         <br></br> <br></br>
         <div className="flex justify-center">
           <img
-            src="ellie/tinytipsScreenshot.png"
+            src="tinytipsScreenshot.png"
             width={700}
             height={400}
             alt="Tiny Tips Screenshot"
@@ -264,7 +264,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row justify-center">
             <img
               className="p-2"
-              src="ellie/ucvmeLogin.png"
+              src="ucvmeLogin.png"
               width={700}
               height={400}
               alt="UCVME Login"
@@ -272,7 +272,7 @@ export default function Home() {
             <br></br>
             <img
               className="p-2"
-              src="ellie/UCVME1.png"
+              src="UCVME1.png"
               width={700}
               height={400}
               alt="UCVME Home"
