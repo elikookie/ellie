@@ -61,7 +61,7 @@ export default function Home() {
         <div className="lg:flex lg:justify-center">
           <div className="hidden lg:block">
             <img
-              src="/five.png"
+              src="ellie/five.png"
               width={250}
               height={250}
               alt="Picture of a hand"
@@ -78,7 +78,7 @@ export default function Home() {
           </div>
           <div className="hidden lg:block">
             <img
-              src="/revfive.png"
+              src="ellie/revfive.png"
               width={250}
               height={250}
               alt="Picture of a hand"
@@ -95,7 +95,7 @@ export default function Home() {
             onClick={() => scrollToPart(zendesk)}
           >
             <img
-              src="/down-arrow.png"
+              src="ellie/down-arrow.png"
               width={100}
               height={100}
               alt="Arrow pointing down"
@@ -123,14 +123,14 @@ export default function Home() {
             </div>
             <div className="lg:hidden p-5">
               <img
-                src="/zendeskLogo.png"
+                src="ellie/zendeskLogo.png"
                 width={400}
                 height={100}
                 alt="Zendesk Logo"
               />
               <br></br>
               <img
-                src="/ZendeskInternship.png"
+                src="ellie/ZendeskInternship.png"
                 width={400}
                 height={100}
                 alt="A picture at my desk at Zendesk"
@@ -164,14 +164,10 @@ export default function Home() {
           </div>
 
           <div className="hidden lg:pl-10 lg:ml-20 lg:block">
-            <img
-              src="/zendeskLogo.png"
-              height={100}
-              alt="Zendesk Logo"
-            />
+            <img src="ellie/zendeskLogo.png" height={100} alt="Zendesk Logo" />
             <br></br>
             <img
-              src="/ZendeskInternship.jpg"
+              src="ellie/ZendeskInternship.jpg"
               width={400}
               height={100}
               alt="A picture at my desk at Zendesk"
@@ -193,7 +189,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
           <div className="flex justify-center">
             <img
-              src="/tud.png"
+              src="ellie/tud.png"
               width={350}
               height={200}
               alt="TUD Grangegorman Campus"
@@ -246,35 +242,54 @@ export default function Home() {
         <br></br> <br></br>
         <div className="flex justify-center">
           <img
-            src="/tinytipsScreenshot.png"
+            src="ellie/tinytipsScreenshot.png"
             width={700}
             height={400}
             alt="Tiny Tips Screenshot"
           />
         </div>
-        <p>Donation platform to support creators </p>
+        <p className="inria-serif-regular">
+          Donation platform to support creators{" "}
+        </p>
         <br></br>
         <div className="pt-10">
           <h1 className="inria-serif-regular text-6xl lg:block ">UCVME </h1>
-          <a href="https://github.com/SENZAGlobalClassroom/UCVME"> Github Page </a>
-          <div className="flex justify-center">
+          <a
+            className="inria-serif-regular underline"
+            href="https://github.com/SENZAGlobalClassroom/UCVME"
+          >
+            {" "}
+            Github Page{" "}
+          </a>
+          <div className="flex flex-col lg:flex-row justify-center">
             <img
-              src="/ucvmeLogin.png"
+              className="p-2"
+              src="ellie/ucvmeLogin.png"
               width={700}
               height={400}
               alt="UCVME Login"
             />
+            <br></br>
+            <img
+              className="p-2"
+              src="ellie/UCVME1.png"
+              width={700}
+              height={400}
+              alt="UCVME Home"
+            />
           </div>
           <br></br>
-          <p>
+          <p className="inria-serif-regular p-5">
             UCVME is a personality-based CV sharing platform designed to help
             users create a personalised CV that highlights their unique
             character traits alongside their professional qualifications using a
             video.
           </p>
-          <p>
-            It was a group project and my primary role in the team is the Tech Lead and my secondary role is the Design Lead and I have been
-            involved in all aspects of the project from the designing stage to development and testing
+          <p className="inria-serif-regular p-5">
+            It was a group project and my primary role in the team is the Tech
+            Lead and my secondary role is the Design Lead and I have been
+            involved in all aspects of the project from the designing stage to
+            development and testing
           </p>
         </div>
       </div>
