@@ -8,6 +8,7 @@ export default function Home() {
   const TUD = useRef(null);
   const projects = useRef(null);
   const contact = useRef(null);
+  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   const scrollToPart = (elementRef) => {
     window.scrollTo({
@@ -62,7 +63,7 @@ export default function Home() {
         <div className="lg:flex lg:justify-center">
           <div className="hidden lg:block">
             <Image
-              src="/five.png"
+              src={`${prefix}/five.png`}
               width={250}
               height={250}
               alt="Picture of a hand"
@@ -79,7 +80,7 @@ export default function Home() {
           </div>
           <div className="hidden lg:block">
             <Image
-              src="/revfive.png"
+              src={`${prefix}/revfive.png`}
               width={250}
               height={250}
               alt="Picture of a hand"
@@ -96,7 +97,7 @@ export default function Home() {
             onClick={() => scrollToPart(zendesk)}
           >
             <Image
-              src="/down-arrow.png"
+              src={`${prefix}/down-arrow.png`}
               width={100}
               height={100}
               alt="Arrow pointing down"
@@ -124,14 +125,14 @@ export default function Home() {
             </div>
             <div className="lg:hidden p-5">
               <Image
-                src="/zendeskLogo.png"
+                src={`${prefix}/zendeskLogo.png`}
                 width={400}
                 height={100}
                 alt="Zendesk Logo"
               />
               <br></br>
               <Image
-                src="/ZendeskInternship.jpg"
+                src={`${prefix}/ZendeskInternship.png`}
                 width={400}
                 height={100}
                 alt="A picture at my desk at Zendesk"
@@ -166,14 +167,13 @@ export default function Home() {
 
           <div className="hidden lg:pl-10 lg:ml-20 lg:block">
             <Image
-              src="/zendeskLogo.png"
-              width={400}
+              src={`${prefix}/zendeskLogo.png`}
               height={100}
               alt="Zendesk Logo"
             />
             <br></br>
             <Image
-              src="/ZendeskInternship.jpg"
+              src={`${prefix}/ZendeskInternship.jpg`}
               width={400}
               height={100}
               alt="A picture at my desk at Zendesk"
@@ -195,7 +195,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
           <div className="flex justify-center">
             <Image
-              src="/tud.png"
+              src={`${prefix}/tud.png`}
               width={350}
               height={200}
               alt="TUD Grangegorman Campus"
