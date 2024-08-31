@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useRef } from "react";
 
 export default function Home() {
@@ -8,7 +7,6 @@ export default function Home() {
   const TUD = useRef(null);
   const projects = useRef(null);
   const contact = useRef(null);
-  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   const scrollToPart = (elementRef) => {
     window.scrollTo({
@@ -62,8 +60,8 @@ export default function Home() {
       <div ref={intro} className="flex flex-col justify-center min-h-screen">
         <div className="lg:flex lg:justify-center">
           <div className="hidden lg:block">
-            <Image
-              src={`${prefix}/five.png`}
+            <img
+              src="/five.png"
               width={250}
               height={250}
               alt="Picture of a hand"
@@ -79,8 +77,8 @@ export default function Home() {
             </h3>
           </div>
           <div className="hidden lg:block">
-            <Image
-              src={`${prefix}/revfive.png`}
+            <img
+              src="/revfive.png"
               width={250}
               height={250}
               alt="Picture of a hand"
@@ -96,8 +94,8 @@ export default function Home() {
             className="absolute bottom-10 lg:bottom-0"
             onClick={() => scrollToPart(zendesk)}
           >
-            <Image
-              src={`${prefix}/down-arrow.png`}
+            <img
+              src="/down-arrow.png"
               width={100}
               height={100}
               alt="Arrow pointing down"
@@ -124,15 +122,15 @@ export default function Home() {
               <br></br> <br></br>
             </div>
             <div className="lg:hidden p-5">
-              <Image
-                src={`${prefix}/zendeskLogo.png`}
+              <img
+                src="/zendeskLogo.png"
                 width={400}
                 height={100}
                 alt="Zendesk Logo"
               />
               <br></br>
-              <Image
-                src={`${prefix}/ZendeskInternship.png`}
+              <img
+                src="/ZendeskInternship.png"
                 width={400}
                 height={100}
                 alt="A picture at my desk at Zendesk"
@@ -166,14 +164,14 @@ export default function Home() {
           </div>
 
           <div className="hidden lg:pl-10 lg:ml-20 lg:block">
-            <Image
-              src={`${prefix}/zendeskLogo.png`}
+            <img
+              src="/zendeskLogo.png"
               height={100}
               alt="Zendesk Logo"
             />
             <br></br>
-            <Image
-              src={`${prefix}/ZendeskInternship.jpg`}
+            <img
+              src="/ZendeskInternship.jpg"
               width={400}
               height={100}
               alt="A picture at my desk at Zendesk"
@@ -194,8 +192,8 @@ export default function Home() {
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
           <div className="flex justify-center">
-            <Image
-              src={`${prefix}/tud.png`}
+            <img
+              src="/tud.png"
               width={350}
               height={200}
               alt="TUD Grangegorman Campus"
@@ -247,27 +245,37 @@ export default function Home() {
         <h1 className="inria-serif-regular text-6xl">TinyTips</h1>
         <br></br> <br></br>
         <div className="flex justify-center">
-          <Image
+          <img
             src="/tinytipsScreenshot.png"
             width={700}
             height={400}
-            alt="TUD Grangegorman Campus"
+            alt="Tiny Tips Screenshot"
           />
         </div>
         <p>Donation platform to support creators </p>
         <br></br>
         <div className="pt-10">
           <h1 className="inria-serif-regular text-6xl lg:block ">UCVME </h1>
+          <a href="https://github.com/SENZAGlobalClassroom/UCVME"> Github Page </a>
           <div className="flex justify-center">
-            <Image
-              src="/tinytipsScreenshot.png"
+            <img
+              src="/ucvmeLogin.png"
               width={700}
               height={400}
-              alt="TUD Grangegorman Campus"
+              alt="UCVME Login"
             />
           </div>
           <br></br>
-          <p>Donation platform to support creators </p>
+          <p>
+            UCVME is a personality-based CV sharing platform designed to help
+            users create a personalised CV that highlights their unique
+            character traits alongside their professional qualifications using a
+            video.
+          </p>
+          <p>
+            It was a group project and my primary role in the team is the Tech Lead and my secondary role is the Design Lead and I have been
+            involved in all aspects of the project from the designing stage to development and testing
+          </p>
         </div>
       </div>
 
@@ -280,7 +288,7 @@ export default function Home() {
               <u>Email</u>
             </h2>
             <p class="text-gray-700 inria-serif-regular">
-              elikoleva.daytime638@passinbox.com
+              ellie210803@gmail.com
             </p>
           </div>
 
