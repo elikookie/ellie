@@ -236,40 +236,36 @@ export default function Home() {
       {/* Projects */}
       <div ref={projects} className="flex flex-col min-h-screen p-20">
         <h1 className="inria-serif-regular text-6xl lg:block hidden">
-          TinyTips - Donation platform to support creators
+          Aria - an automated voice trainer for singers
         </h1>
-        <h1 className="inria-serif-regular text-6xl lg:hidden">TinyTips</h1>
+        <h1 className="inria-serif-regular text-6xl lg:hidden">Aria</h1>
         <h3 className="inria-serif-regular pt-2 pb-2">
-          (Still under development) Next.js, ,Node.js,Firebase, Stripe
+          This is my Final Year Project. I have attached the current project
+          proposal which will be updated to an Interim Report and a link to the
+          prototype by December 2024.
         </h3>
-        <a
-          className="inria-serif-regular underline"
-          href="https://github.com/elikookie/tinycoins"
-        >
-          Github Page
-        </a>
-        <br></br> <br></br>
-        <div className="flex flex-col lg:flex-row justify-center">
-          <img
-            src="tinytipsScreenshot.png"
-            width={700}
-            height={400}
-            alt="Tiny Tips Screenshot"
-          />
-          <br></br>
-          <img
-            className="p-2"
-            src="tc1.png"
-            width={700}
-            height={400}
-            alt="Tiny Coins Creator Page"
-          />
-        </div>
+        <br></br>
+        <div className="flex flex-col lg:flex-row justify-center"></div>
         <p className="inria-serif-regular">
-          A simple donation platform to allow fans to support their favourite
-          creators! <br></br>This is a personal project of mine that I have recently
-          started and should finish before the end of September.
+          Aria is a singing voice trainer application targeting hobbyists,
+          amateur singers and students who have no other means of accessing
+          professional vocal training. The app will help users improve their
+          singing skills by building up good vocal health habits (e.g. warmups
+          and cool downs), providing skill-level appropriate exercises with
+          AI-powered guidance, offering theory lessons and providing progress
+          tracking and community features. Technologies planned to be used
+          include ML algorithms for vocal analysis, web technologies such as
+          React.js and a NoSQL databases such as Firebase.
         </p>
+        <br></br>
+        <div className="flex flex-col lg:flex-row justify-center">
+          <iframe
+            class="pdf"
+            src="FYPProjectProposal.pdf"
+            width="800"
+            height="500"
+          ></iframe>
+        </div>
         <br></br>
         <div className="pt-10">
           <h1 className="inria-serif-regular text-6xl lg:block ">UCVME </h1>
