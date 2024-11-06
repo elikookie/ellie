@@ -320,7 +320,7 @@ export default function Home() {
               <u>Email</u>
             </h2>
             <p class="text-gray-700 inria-serif-regular">
-              ellie210803@gmail.com
+              elikoleva32@gmail.com
             </p>
           </div>
 
